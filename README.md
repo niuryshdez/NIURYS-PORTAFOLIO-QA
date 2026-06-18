@@ -35,44 +35,44 @@ Para cada Historia de Usuario (HU) este portafolio incluye un Excel con **7 hoja
 ## 🏗️ Estructura del portafolio
 
 ```
-📂 PROYECTO 1 — y2k-qa-analisis-funcional (este repo)
+📂 1 — Y2K-QA-Analisis-Funcional (este repo)
 │
-├── 📂 analisis-funcional/
-│   ├── ANALISIS_FUNCIONAL_HU_01_LOGIN_Y2K.xlsx              ✅ Disponible
-│   ├── ANALISIS_FUNCIONAL_HU_02_CAMBIAR_CONTRASEÑA_Y2K.xlsx ✅ Disponible
-│   ├── ANALISIS_FUNCIONAL_HU_03_CLIENTES_Y2K.xlsx           🔜 Próximamente
-│   └── ANALISIS_FUNCIONAL_HU_04_CONTACTOS_Y2K.xlsx          🔜 Próximamente
+├── 📂 Analisis-Funcional/
+│   ├── Analisis_Funcional_HU_01_LOGIN_Y2K.xlsx              ✅ Disponible
+│   ├── Analisis_Funcional_HU_02_CAMBIAR_CONTRASEÑA_Y2K.xlsx ✅ Disponible
+│   ├── Analisis_Funcional_HU_03_CLIENTES_Y2K.xlsx           🔜 Próximamente
+│   └── Analisis_Funcional_HU_04_CONTACTOS_Y2K.xlsx          🔜 Próximamente
 │
-├── 📂 planes-de-prueba/                                      🔜 Próximamente
+├── 📂 Planes-de-Prueba/                                      🔜 Próximamente
 │   └── Plan-de-Pruebas-Y2K.docx
 │
-├── 📂 casos-de-prueba/                                       🔜 Próximamente
+├── 📂 Casos-de-Prueba/                                       🔜 Próximamente
 │   ├── TC-HU-01-Login.xlsx
 │   ├── TC-HU-02-ResetPassword.xlsx
 │   ├── TC-HU-03-Clientes.xlsx
 │   └── TC-HU-04-Contactos.xlsx
 │
-├── 📂 reportes-defectos/                                     🔜 Próximamente
+├── 📂 Reportes-Defectos/                                     🔜 Próximamente
 │   └── defectos-encontrados.xlsx
 │
-└── 📂 sql-queries/                                           🔜 Próximamente
+└── 📂 SQL-QUERIES/                                           🔜 Próximamente
     └── SQL-QUERIES-QA-Y2K.md
 
 
-📂 PROYECTO 2 — y2k-qa-automatizacion-cypress                🔜 Próximamente
+📂 2 — Y2K-QA-Automatizacion-Cypress                🔜 Próximamente
 │
 └── 📂 cypress/e2e/
     ├── login.cy.js
     └── reset-password.cy.js
 
 
-📂 PROYECTO 3 — y2k-qa-api-postman                           🔜 Próximamente
+📂 3 — Y2K-QA-API-Postman                           🔜 Próximamente
 │
-├── 📂 collections/
+├── 📂 Collections/
 │   ├── Y2K-Auth.postman_collection.json
 │   ├── Y2K-Clientes.postman_collection.json
 │   └── Y2K-Facturacion.postman_collection.json
-└── 📂 environments/
+└── 📂 Environments/
     └── Y2K-Dev.postman_environment.json
 ```
 
