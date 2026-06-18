@@ -1,83 +1,143 @@
-# Portafolio QA — Niurys
+# Portafolio QA — Niurys Hernández
 
-> **QA Tester Jr.** | Montevideo, Uruguay
-> Formación autodidacta · Buscando primera oportunidad en testing
+> **QA Funcional** | Montevideo, Uruguay  
+> Experiencia práctica en testing funcional sobre sistemas ERP reales en producción
 
-¡Hola! Soy Niurys, tester en formación. Este portafolio reúne mi trabajo práctico aplicando técnicas de QA sobre un caso de estudio real: el sistema **Y2K — ERP**.
-
----
-
-## Sobre el caso de estudio: Y2K
-
-Y2K es un sistema ERP que cubre los módulos **Ventas, Clientes, Compras, Inventario y Contabilidad**. Para cada Historia de Usuario (HU) trabajada, este portafolio incluye:
-
-- **Análisis funcional**: historia de usuario, criterios de aceptación, flujos.
-- **Reglas de negocio**: cada validación documentada y trazable.
-- **Casos de prueba**: planilla Excel con casos positivos, negativos y de borde.
-- **Reporte de defectos**: planilla Excel con bugs documentados (severidad, prioridad, evidencia).
-- **Escenarios Gherkin**: redacción BDD lista para automatización.
+¡Hola! Soy Niurys, QA Funcional con experiencia desde 2023. Este portafolio reúne mi trabajo aplicando técnicas de QA sobre un sistema real en producción: **Y2K — ERP contable SaaS** desarrollado y comercializado por Finansoft.
 
 ---
 
-## Estructura del portafolio
+## 🎯 Sobre el caso de estudio: Y2K ERP
+
+Y2K es un sistema ERP contable SaaS multi-tenant para PYMES, desarrollado con CodeIgniter 3 (PHP) + AngularJS 1.x + MySQL/MariaDB. El sistema cubre los módulos de **Ventas, Clientes, Compras, Inventario, Contabilidad y Facturación electrónica (integración SRI Ecuador)**.
+
+Los módulos documentados en este portafolio son:
+
+| Módulo | HU | Estado |
+|--------|-----|--------|
+| Login / Autenticación | HU-01 | ✅ Disponible |
+| Restablecer Contraseña | HU-02 | ✅ Disponible |
+| Alta y Edición de Clientes | HU-03 | 🔜 Próximamente |
+| Contactos Adicionales | HU-04 | 🔜 Próximamente |
+
+Para cada Historia de Usuario (HU) este portafolio incluye un Excel con **7 hojas integradas**:
+
+- **Historia de Usuario** — propósito, actores, precondiciones, contexto técnico
+- **Flujos** — flujo principal + flujos alternativos documentados paso a paso
+- **Reglas de Negocio** — cada regla trazable a su fuente (código fuente + manuales)
+- **Criterios de Aceptación** — escenarios en formato Gherkin (Given/When/Then)
+- **Validaciones** — campos, valores límite (BVA), seguridad y datos de prueba
+- **Puntos de Falla** — riesgos anticipados categorizados por criticidad
+- **Resumen Ejecutivo** — métricas y hallazgos del análisis
+
+---
+
+## 🏗️ Estructura del portafolio
 
 ```
-02-PORTFOLIO/
-├── Y2K-sistema-ERP/                    Análisis y testing manual por HU
-│   ├── HU-01-login/
-│   ├── HU-02-reset-password/
-│   ├── HU-03-mantenimiento-clientes/
-│   └── HU-04-ventas/                   (próxima)
+📂 PROYECTO 1 — y2k-qa-analisis-funcional (este repo)
 │
-├── automation-cypress/                 Pruebas E2E con Cypress
-│   ├── login.spec.cy.js
-│   └── clientes.spec.cy.js
+├── 📂 analisis-funcional/
+│   ├── ANALISIS_FUNCIONAL_HU_01_LOGIN_Y2K.xlsx              ✅ Disponible
+│   ├── ANALISIS_FUNCIONAL_HU_02_CAMBIAR_CONTRASEÑA_Y2K.xlsx ✅ Disponible
+│   ├── ANALISIS_FUNCIONAL_HU_03_CLIENTES_Y2K.xlsx           🔜 Próximamente
+│   └── ANALISIS_FUNCIONAL_HU_04_CONTACTOS_Y2K.xlsx          🔜 Próximamente
 │
-└── api-testing-postman/                Pruebas de API con Postman
-    ├── Y2K-coleccion.postman_collection.json
-    └── Y2K-environment.postman_environment.json
+├── 📂 planes-de-prueba/                                      🔜 Próximamente
+│   └── Plan-de-Pruebas-Y2K.docx
+│
+├── 📂 casos-de-prueba/                                       🔜 Próximamente
+│   ├── TC-HU-01-Login.xlsx
+│   ├── TC-HU-02-ResetPassword.xlsx
+│   ├── TC-HU-03-Clientes.xlsx
+│   └── TC-HU-04-Contactos.xlsx
+│
+├── 📂 reportes-defectos/                                     🔜 Próximamente
+│   └── defectos-encontrados.xlsx
+│
+└── 📂 sql-queries/                                           🔜 Próximamente
+    └── SQL-QUERIES-QA-Y2K.md
+
+
+📂 PROYECTO 2 — y2k-qa-automatizacion-cypress                🔜 Próximamente
+│
+└── 📂 cypress/e2e/
+    ├── login.cy.js
+    └── reset-password.cy.js
+
+
+📂 PROYECTO 3 — y2k-qa-api-postman                           🔜 Próximamente
+│
+├── 📂 collections/
+│   ├── Y2K-Auth.postman_collection.json
+│   ├── Y2K-Clientes.postman_collection.json
+│   └── Y2K-Facturacion.postman_collection.json
+└── 📂 environments/
+    └── Y2K-Dev.postman_environment.json
 ```
 
 ---
 
-## Habilidades demostradas
+## 📊 Métricas del análisis funcional
 
-### Testing manual
-- Análisis funcional y descomposición de Historias de Usuario.
-- Diseño de casos de prueba aplicando: clases de equivalencia, valores límite, tablas de decisión.
-- Reporte de defectos con criterios profesionales (severidad vs prioridad, pasos reproducibles, evidencia).
+| HU | Módulo | RN | CA | Flujos | Puntos de Falla |
+|----|--------|----|----|--------|-----------------|
+| HU-01 | Login | 25 | 21 | 9 | 17 |
+| HU-02 | Reset Password | 25 | 19 | 9 | 13 |
+| HU-03 | Alta/Edición Clientes | 33 | 21 | 16 | 21 |
+| HU-04 | Contactos Adicionales | 28 | 22 | 17 | 18 |
+| **Total** | **4 módulos** | **111** | **83** | **51** | **69** |
+
+---
+
+## 🛠️ Habilidades demostradas
+
+### Testing funcional
+- Análisis funcional desde código fuente, manuales y entrevistas con el dev
+- Extracción de Reglas de Negocio con trazabilidad a la fuente
+- Diseño de Criterios de Aceptación en formato Gherkin (BDD)
+- Técnicas: Boundary Value Analysis (BVA), partición de equivalencias
+- Identificación proactiva de riesgos de seguridad (enumeración de usuarios, multi-tenancy, DELETE+INSERT sin transacción)
+- Documentación con trazabilidad completa TC → CA → RN → PF
 
 ### Automatización
-- **Cypress** — pruebas E2E para flujos críticos.
-- **Postman** — colección de pruebas API con scripts de validación.
+- **Cypress** — pruebas E2E para flujos críticos (próximamente)
+- **Postman** — pruebas de API REST (próximamente)
 
-### Metodologías
-- **BDD** con Gherkin (Dado / Cuando / Entonces).
-- ISTQB Foundation Level — en formación.
-
-### Herramientas
-- Excel para gestión de casos y reporte de defectos.
-- Git / GitHub para versionado.
-- Postman, Cypress, Chrome DevTools.
+### Metodologías y herramientas
+- BDD con Gherkin
+- Git / GitHub
+- Excel para análisis funcional y casos de prueba
+- Formación: ISTQB Foundation Level (en curso)
 
 ---
 
-## Cómo navegar este repo
+## 🔍 Hallazgos de seguridad documentados
 
-Si sos reclutador o tech lead, te recomiendo arrancar por:
+Durante el análisis funcional se identificaron y documentaron hallazgos reales:
 
-1. **Cualquier carpeta `HU-XX/`** → leé la historia de usuario y revisá los archivos de casos de prueba (`.xlsx`).
-2. **`automation-cypress/`** → mirá los specs para ver cómo aplico los casos en automatización.
-3. **`api-testing-postman/`** → revisá los tests con assertions sobre status, payload y persistencia entre requests.
+- **Enumeración de usuarios** en Login — mensajes de error diferenciados permiten identificar usuarios válidos del sistema
+- **Validación de límites solo en frontend** en Contactos Adicionales — bypasseable vía API directa
+- **Riesgo transaccional en DELETE+INSERT** sin transacción de BD en gestión de contactos
 
 ---
 
-## Contacto
+## 🚀 Cómo navegar este repo
 
-- **LinkedIn:** [Pegar URL]
-- **Email:** [Pegar email]
+Si sos reclutador o tech lead, te recomiendo:
+
+1. **Abrí cualquier Excel de `analisis-funcional/`** → revisá la hoja "Resumen Ejecutivo" para ver métricas y hallazgos de cada módulo
+2. **Hoja "CA — Gherkin"** → criterios de aceptación documentados en BDD
+3. **Hoja "Puntos de Falla"** → análisis de riesgos anticipados por criticidad
+
+---
+
+## 📬 Contacto
+
+- **LinkedIn:** [linkedin.com/in/niurys-hernandez](https://www.linkedin.com/in/niurys-hernandez)
+- **Email:** niuryshdez@gmail.com
 - **Ubicación:** Montevideo, Uruguay
 
 ---
 
-*Este portafolio se actualiza semanalmente con nuevas HUs y pruebas. Última actualización: ver historial de commits.*
+*Portafolio en construcción activa — se actualiza con nuevas HUs, casos de prueba y automatización. Ver historial de commits.*
