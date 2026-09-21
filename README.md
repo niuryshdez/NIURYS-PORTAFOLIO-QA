@@ -44,7 +44,7 @@ Si eres reclutador/a o tech lead, te recomiendo este recorrido de 5 minutos:
 
 **Herramientas**
 - Excel · Markdown · Git / GitHub · DevTools del navegador · Gherkin (BDD)
-- Formación: ISTQB Foundation Level (en curso)
+- Formación: Curso de Tester Funcional — Alianza Cultural (en curso)
 
 ---
 
