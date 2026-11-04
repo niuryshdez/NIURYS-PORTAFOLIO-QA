@@ -18,16 +18,6 @@
 
 ---
 
-## 🧭 Cómo navegar este repositorio
-
-Si eres reclutador/a o tech lead, te recomiendo este recorrido de 5 minutos:
-
-1. **[Proyecto 2 → Hallazgos destacados](2-SOLNARIS-ERP-QA-TESTING/README.md#-hallazgos-destacados)**: los bugs más relevantes y cómo los encontré.
-2. **[Proyecto 1 → Excel de HU-01 Login](1-Y2K-QA-ANALISIS-FUNCIONAL/DOCUMENTOS/ANALISIS_FUNCIONAL_HU_01_LOGIN_Y2K.xlsx)**: abre la hoja *Resumen Ejecutivo* y luego *Criterios de Aceptación* (Gherkin).
-3. **[Proyecto 1 → Hallazgos de seguridad](1-Y2K-QA-ANALISIS-FUNCIONAL/README.md#-hallazgos-de-seguridad-documentados)**: riesgos detectados desde el análisis, antes de ejecutar una sola prueba.
-
----
-
 ## 🛠️ Habilidades demostradas
 
 **Análisis y diseño**
